@@ -14,12 +14,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  $name = $_POST['name'];
-  $email = $_POST['email'];
-  echo $name;
+  $subject = $_POST['subject'];
+  $question = $_POST['question'];
+  $option1 = $_POST['option1'];
+  $option2 = $_POST['option2'];
+  $option3 = $_POST['option3'];
+  $option4 = $_POST['option4'];
+  $correct_answer = $_POST['correct_answer'];
 
-  $sql = "insert into `users` (name,email) 
-  values ('$name','$email')";
+  $sql = "insert into `questions` (subject,question,option1,option2,option3,option4,correct_answer) 
+  values ('$subject','$question','$option1','$option2','$option3','$option4','$correct_answer')";
 
   try {
     $result = mysqli_query($con,$sql);

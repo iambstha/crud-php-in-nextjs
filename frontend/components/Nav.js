@@ -7,6 +7,8 @@ const Nav = () => {
             <li><a href="/">Home</a></li>
             <li><a href="/users">Users</a></li>
             <li><a href="/add-user">Add User</a></li>
+            <li><a href="/questions">Questions</a></li>
+            <li><a href="/add-question">Add Question</a></li>
         </ul>
     </nav>
   )
