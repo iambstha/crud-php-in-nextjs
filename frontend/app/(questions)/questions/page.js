@@ -1,7 +1,7 @@
 "use client"
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import '../globals.css';
+import '../../globals.css';
 
 const QuestionsPage = () => {
     const [questions, setQuestions] = useState([]);
